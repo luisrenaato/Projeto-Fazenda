@@ -157,10 +157,8 @@ body,
 
 
 [data-testid="stSidebar"] * {{
-
     color:
-        #F7F0DF !important;
-
+    #F7F0DF !important;
 }}
 
 
@@ -494,21 +492,53 @@ h3 {{
    SELECTS
    ========================================================== */
 
-div[data-baseweb="select"] > div {{
-
-    background:
-        rgba(255,253,246,.9);
-
-    border:
-        2px solid
-        {COLORS["moss"]};
-
-    border-radius:
-        10px;
-
+[data-testid="stSidebar"] div[data-baseweb="select"] > div {{
+    background-color: #FFFDF6 !important;
+    border: 2px solid #536B45 !important;
+    border-radius: 10px !important;
 }}
 
+[data-testid="stSidebar"] div[data-baseweb="select"] * {{
+    color: #2E2B25 !important;
+    -webkit-text-fill-color: #2E2B25 !important;
+}}
 
+[data-testid="stSidebar"] div[data-baseweb="select"] input {{
+    color: #2E2B25 !important;
+    -webkit-text-fill-color: #2E2B25 !important;
+}}
+
+[data-testid="stSidebar"] div[data-baseweb="select"] svg {{
+    fill: #536B45 !important;
+}}
+
+/* MENU QUE ABRE AO CLICAR */
+
+div[data-baseweb="popover"] {{
+    background-color: #FFFDF6 !important;
+}}
+
+div[data-baseweb="popover"] [role="listbox"] {{
+    background-color: #FFFDF6 !important;
+}}
+
+div[data-baseweb="popover"] [role="option"] {{
+    background-color: #FFFDF6 !important;
+    color: #2E2B25 !important;
+}}
+
+div[data-baseweb="popover"] [role="option"] * {{
+    color: #2E2B25 !important;
+    -webkit-text-fill-color: #2E2B25 !important;
+}}
+
+div[data-baseweb="popover"] [role="option"]:hover {{
+    background-color: #EDE2CC !important;
+}}
+
+div[data-baseweb="popover"] [role="option"]:hover * {{
+    color: #2E2B25 !important;
+}}
 /* ==========================================================
    TABELAS
    ========================================================== */
