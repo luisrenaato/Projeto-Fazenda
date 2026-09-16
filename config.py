@@ -5,12 +5,13 @@
 
 SHEET_URL = (
     "https://docs.google.com/spreadsheets/d/"
-    "1IH9S__uyU11xFJYprjBrnsidPENbqzpfXx-cZ51QjhI/edit"
+    "1IH9S__uyU11xFJYprjBrnsidPENbqzpfXx-cZ51QjhI/"
+    "edit?gid=1297145970#gid=1297145970"
 )
 
 FORM_URL = (
     "https://docs.google.com/forms/d/"
-    "1fQs4M3DzqVW0x3IgkyLTNW_Fl9gDZPPVAsC7bxSOSBw/edit"
+    "1fQs4M3DzqVW0x3IgkyLTNW_Fl9gDZPPVAsC7bxSOSBw/viewform"
 )
 
 
