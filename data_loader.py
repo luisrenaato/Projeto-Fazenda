@@ -8,11 +8,6 @@ import streamlit as st
 from analytics import clean_column_name
 from demo_data import make_demo_data
 
-
-# ============================================================
-# TRANSFORMA LINK DO SHEETS EM CSV
-# ============================================================
-
 def sheet_to_csv_url(url):
 
     match = re.search(
@@ -45,10 +40,6 @@ def sheet_to_csv_url(url):
     )
 
 
-# ============================================================
-# LEITURA
-# ============================================================
-
 @st.cache_data(ttl=60)
 def read_sheet(url):
 
@@ -79,10 +70,6 @@ def read_sheet(url):
     return dataframe
 
 
-# ============================================================
-# NORMALIZAÇÃO
-# ============================================================
-
 def normalize(dataframe):
 
     dataframe = dataframe.copy()
@@ -94,7 +81,6 @@ def normalize(dataframe):
         for column in dataframe.columns
     ]
 
-    # Não precisamos exibir timestamp.
     remove = []
 
     for column in dataframe.columns:
@@ -125,10 +111,6 @@ def normalize(dataframe):
     return dataframe
 
 
-# ============================================================
-# CARREGAMENTO PRINCIPAL
-# ============================================================
-
 def load_data(sheet_url):
 
     try:
@@ -154,11 +136,6 @@ def load_data(sheet_url):
         demo = make_demo_data()
 
         return demo, False
-
-
-# ============================================================
-# ERRO
-# ============================================================
 
 def get_sheet_error(sheet_url):
 
